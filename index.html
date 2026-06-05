@@ -1,0 +1,86 @@
+<html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Birthday Surprise</title>
+    <link rel="stylesheet" href="style.css">
+<<<<<<< HEAD
+=======
+    <style>
+        body {
+            margin: 0;
+            background: black;
+            overflow: hidden;
+            color: white;
+            font-family: Arial;
+        }
+
+        /* Stars */
+        .star {
+            position: absolute;
+            width: 3px;
+            height: 3px;
+            background: white;
+            border-radius: 50%;
+            animation: twinkle 2s infinite ease-in-out;
+        }
+
+        @keyframes twinkle {
+
+            0%,
+            100% {
+                opacity: 0.2;
+                transform: scale(1);
+            }
+
+            50% {
+                opacity: 1;
+                transform: scale(1.8);
+            }
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 120px;
+            font-size: 40px;
+            color: pink;
+            text-shadow: 0 0 20px white;
+        }
+    </style>
+
+>>>>>>> 7e2a639 (add stars animation)
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>✨Happy Birthday✨<br>Ansh</h1>
+        <button onclick="window.location.href='second.html'">
+            Open Your Card 🎁
+        </button>
+
+    </div>
+
+
+    <script src="birthday button.js"></script>
+<<<<<<< HEAD
+</body>
+
+</html>
+=======
+    <script>
+        for (let i = 0; i < 80; i++) {
+            let star = document.createElement("div");
+            star.className = "star";
+            star.style.top = Math.random() * 100 + "vh";
+            star.style.left = Math.random() * 100 + "vw";
+            star.style.animationDuration = (Math.random() * 3 + 1) + "s";
+            document.body.appendChild(star);
+        }
+    </script>
+</body>
+
+</html>
+>>>>>>> 7e2a639 (add stars animation)
