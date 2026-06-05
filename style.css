@@ -1,7 +1,8 @@
 body {
+    position: relative;
     display: flex;
     margin: 0;
-    height: 100vh;
+    min-height: 100vh;
     justify-content: center;
     align-items: center;
     background: linear-gradient(135deg,
@@ -10,6 +11,7 @@ body {
             #2b1055);
     color: white;
     font-family: Arial, sans-serif;
+    overflow: hidden;
 }
 
 .container {
@@ -66,3 +68,36 @@ img {
     border-radius: 15px;
     box-shadow: 0 0 20px rgba(255, 255, 255, 0.4);
 }
+
+#starfield {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: -1;
+}
+
+.star {
+    position: absolute;
+    border-radius: 50%;
+    opacity: 0;
+    animation: sparkle 3s linear infinite;
+    background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 70%);
+    box-shadow: 0 0 14px rgba(255,255,255,0.6);
+}
+
+@keyframes sparkle {
+    0%, 100% {
+        opacity: 0;
+        transform: scale(0.6);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.4);
+    }
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 22px rgba(255,255,255,0.18);
+}
+
