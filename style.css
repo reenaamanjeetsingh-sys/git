@@ -41,11 +41,27 @@ button {
     max-width: 600px;
     text-align: center;
     margin: auto;
+}
 
+#drawingSection {
+    display: none;
+    text-align: center;
+    margin-top: 25px;
+}
+
+#finalMsg {
+    display: none;
+    margin-top: 15px;
+    line-height: 1.6;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 img {
-    width: 600px;
+    width: 90%;
+    max-width: 400px;
+    height: auto;
     margin-top: 15px;
     border-radius: 15px;
     box-shadow: 0 0 20px rgba(255, 255, 255, 0.4);
